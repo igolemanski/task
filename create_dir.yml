@@ -1,0 +1,8 @@
+- hosts: all
+  become: true
+  tasks:
+
+    - name: "Create dir"
+      file:
+        path: /root/test
+        state: directory
